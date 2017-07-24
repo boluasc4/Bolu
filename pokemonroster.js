@@ -1,0 +1,1 @@
+var myteam = [["Pikachu","electric","50","45","55",False],["Skeptile","Grass","100","56","67",False],["Mewtwo","Psychic","200","98","999",True]]

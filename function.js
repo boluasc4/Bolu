@@ -13,7 +13,7 @@ var result = Math.floor(randNum);
 return result
 }
 
-rand(14); //any nuber can replace 14
+rand(14); //any number can replace 14
 
 
 function rand(num){
@@ -28,3 +28,8 @@ function rand(num){
     return Math.floor(Math.random()*num);
 }
 console.log(rand(95));
+
+
+var students = ["Bolu","Ricky","Josh","Sami","Jonathan"]
+
+console.log(students[rand(5)]);
