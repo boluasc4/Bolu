@@ -1,0 +1,33 @@
+body{
+      background: grey;
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+}
+
+
+.singleBurger{
+
+    border: solid 3px green;
+    background-color: whitesmoke;
+    width:65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25%;
+    padding: 10%; 
+}
+
+.mainContent{
+
+    border: dashed 5px black;
+}
+img{
+    width:35%;
+    vertical-align: middle; 
+}
+
+p{
+    width:64%;
+    display: inline-block;
+    vertical-align: middle;
+    }
