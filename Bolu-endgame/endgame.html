@@ -27,7 +27,7 @@
 		}
 		a {
 			text-decoration: none;
-			color: pink;
+			color: blue;
 			font-weight: 700;
 		}
 		span.red {
@@ -39,7 +39,7 @@
 			font-weight: 700;
 		}
 		span.pink {
-			color: pink;
+			color: grey;
 		}
 		.button {
 			width: 90px;
@@ -81,17 +81,47 @@
 		.X-play {
 			background-color: red;
 		}
+		#map {
+        height: 300px;
+        width: 100%;
+		text-align: bottom;
+       }
+	   h2 {
+		  text-align: left;
+		  margin:5%
+
+	   };
+
 	</style>
 </head>
 <body>
+	<h3>My Opponent's Location</h3>
+    <div id="map"></div>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT5KVCJt1UwfuHr54JdS8-9aXSSnT9Dgs&callback=initMap">
+    </script>
+	    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
 
 
 	<div class="container">
-
+<h2>You: __ points</h2>
+<h2>Opponent: __ points</h2>
 		<h1>Tic Tac Bro</h1>
 
-		<p>A simple game of tic tac toe to play<br/>
-			You play as <span class="red">X</span> and the computer plays as <span class="blue">O</span><br/>
+		<p>A simple game of tic tac toe to play online and/or with friends<br/>
+			You play as <span class="red">X</span> and the other player plays as <span class="blue">O</span><br/>
 			Start by choosing a square to play.
             C'mon All Stars Dare Greatly!</p>
 
@@ -112,7 +142,7 @@
 		<div id="square9" class="tile free"></div>
 	</div>
 
-	<footer class="container">Made with <span class="blue">&#9829</span> by <a>The Geysers</a><footer>
+	<footer class="container">Made with code by <a>The Geysers</a><footer>
 
 
 </body>

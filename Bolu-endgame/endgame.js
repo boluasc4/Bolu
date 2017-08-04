@@ -36,7 +36,7 @@ function winAlert(player) {
 	win = true;
 
 	if (player == "X") {
-		alert("Congratulations, you beat the computer!")
+		alert("Congratulations, you beat player 2!")
 	} else {
 		alert("You lost!")
 	}
